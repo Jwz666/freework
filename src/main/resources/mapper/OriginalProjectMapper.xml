@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tempcompany.freework.mapper.OriginalProjectMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.tempcompany.freework.entity.OriginalProject">
+        <id column="id" property="id" />
+        <result column="project_name" property="project_name" />
+        <result column="project_payoff" property="project_payoff" />
+        <result column="project_decrible" property="project_decrible" />
+        <result column="project_file" property="project_file" />
+        <result column="project_status" property="project_status" />
+        <result column="user_id" property="user_id" />
+        <result column="create_time" property="create_time" />
+        <result column="contract_file" property="contract_file" />
+    </resultMap>
+
+</mapper>
