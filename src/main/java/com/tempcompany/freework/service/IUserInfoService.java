@@ -1,5 +1,6 @@
 package com.tempcompany.freework.service;
 
+import com.tempcompany.freework.component.RetData;
 import com.tempcompany.freework.entity.UserInfo;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -13,4 +14,17 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface IUserInfoService extends IService<UserInfo> {
 
+    /**
+     * 登录
+     * @param code
+     * @return
+     */
+    RetData login(String code);
+
+    /**
+     * 完善用户信息
+     * @param userInfo
+     * @return
+     */
+    RetData ImproveUserInfo(UserInfo userInfo);
 }
